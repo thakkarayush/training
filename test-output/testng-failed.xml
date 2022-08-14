@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="training.testng.TestingExample">
+      <class name="training.testng.dataprovider.DataProviderExample">
         <methods>
-          <include name="timeoutExample"/>
+          <include name="dataProvider1ExampleTest" invocation-numbers="1"/>
         </methods>
-      </class> <!-- training.testng.TestingExample -->
+      </class> <!-- training.testng.dataprovider.DataProviderExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
