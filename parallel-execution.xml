@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Suite">
+  <test thread-count="5" parallel="tests" name="Test">
+    <classes>
+      <class name="training.testng.ParallerExecution"/>
+      <class name="training.testng.ParallerExecution1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+<!-- If I give parallel="classes" execution will be done in 1 thead for a class(<class name="training.testng.ParallerExecution"/>) = 1(thread) and for another class = 2(thread) -->
+<!-- If I give parallel="tests" execution will be done in 1 thead for a class(<class name="training.testng.ParallerExecution"/>) = 1(thread) and for another class = 1(thread) -->

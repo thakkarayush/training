@@ -1,6 +1,7 @@
 package training.testng.dataprovider;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -31,6 +32,7 @@ public class DataProviderExample {
 	@Test(dataProvider = "data-provider-1")
 	public void dataProvider1ExampleTest(int a, int b, int c) {
 		int sum=a+b;
+		Reporter.log("This is a test log");//this will be shown in emailable-report.html
 		Assert.assertEquals(sum, c);
 		//System.out.println("Parameter value is "+sum);
 	}
